@@ -2,5 +2,28 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
 
+body {
+  font-family: "Mulish", sans-serif;
+  color: #848892;
+  background-color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
 }

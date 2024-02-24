@@ -1,58 +1,218 @@
-.heading {
-  background-attachment: sticky;
-  background-color: #6ec1e4;
-  width: 100%;
-  height: 70px;
-  padding: 10px;
-  font-style: italic;
+/*! Header start */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px;
+
+  img {
+    max-width: 117px;
+  }
+
+  ul {
+    display: flex;
+    gap: 10px;
+
+    li {
+      a {
+        color: #232f4b;
+        font-weight: 600;
+        position: relative;
+        font-family: "Futura PT";
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+/*! Header end */
+
+/*! Carsousel section start */
+#carousel {
+  background-image: url("../assets/mainPoster.jpeg");
+  height: 120vh;
+  background-size: cover;
+  position: relative;
+}
+
+#carousel::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #00315f;
+  opacity: 0.25;
+}
+/*! Carsousel section end */
+
+/*! Date section start */
+#date {
+  padding: 110px 0px 80px 0px;
+
+  .date-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+  }
+
+  .clock {
+    width: 190px;
+    height: 170px;
+    background: url("https://wpocean.com/wp/loveme/wp-content/themes/loveme/assets/images/clock-bg.png")
+      center center / cover no-repeat local;
+    float: left;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      font-size: 54px;
+      font-size: 3.6rem;
+      line-height: 1em;
+      padding-top: 15px;
+      color: #5880a2;
+    }
+  }
+}
+/*! Date section end */
+
+/*! Info section start */
+#info {
+  padding: 40px 0px 120px 0px;
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+
+    .detail {
+      .image-wrapper {
+        position: relative;
+      }
+
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+
+      h4 {
+        color: #002642;
+        font-weight: 700;
+        font-size: 1.4666666667rem;
+        margin: 20px 0 0.8em;
+      }
+
+      .icons {
+        margin-top: 20px;
+        svg {
+          width: 20px;
+          margin-right: 20px;
+        }
+      }
+    }
+    .info-left {
+      text-align: right;
+
+      .image-wrapper {
+        div {
+          left: 104px;
+        }
+      }
+    }
+
+    .info-center {
+      position: relative;
+
+      img {
+        border-radius: 235px;
+        width: 470px;
+        position: relative;
+        height: 690px;
+      }
+
+      .elementor img {
+        height: auto;
+        max-width: 100%;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      div {
+        position: absolute;
+        left: -65px;
+        top: -56px;
+        width: 130%;
+        height: 130%;
+        img {
+          width: 597px;
+          height: 805px;
+        }
+      }
+    }
+  }
+}
+/*! Info section end */
+
+/*! Story section start */
+#story {
   text-align: center;
+
+  .story {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h3 {
+    font-size: 40px;
+    line-height: 55px;
+    margin: 0;
+    margin: 15px 0;
+    position: relative;
+    text-transform: uppercase;
+    font-family: "Futura PT";
+    font-weight: 500;
+    color: #002642;
+  }
+
+  .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #86a0b6;
+    position: relative;
+
+    margin-left: 156px;
+  }
+
+  .circle::before {
+    content: "";
+    position: absolute;
+    left: -108px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: #86a0b6;
+  }
+
+  .circle::after {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: #86a0b6;
+  }
 }
-img {
-  contain: " ";
-  width: 100%;
-  height: 100%;
-}
-span {
-  position: relative;
-  bottom: 200px;
-  left: 100px;
-  color: black;
-  border: 10px;
-  font-size: 2rem;
-}
-.theday {
-  position: relative;
-  bottom: 200px;
-  left: 100px;
-  color: black;
-  border: 10px;
-  font-size: 2rem;
-}
-.box-1 {
-  background-color: #6ec1e4;
-  border-radius: 2px;
-}
-.me {
-  position: relative;
-  top: 150px;
-  left: 150px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-.her {
-  position: relative;
-  top: 150px;
-  left: 600px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-.two {
-  position: relative;
-  top: 300px;
-  left: 100px;
-  width: 350px;
-  height: 300px;
-  border-radius: 50%;
-}
+/*! Story section end */
