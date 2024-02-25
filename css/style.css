@@ -28,14 +28,8 @@ header {
 /*! Header end */
 
 /*! Carsousel section start */
-#carousel {
-  background-image: url("../assets/mainPoster.jpeg");
-  height: 120vh;
-  background-size: cover;
-  position: relative;
-}
 
-#carousel::before {
+/* #carousel::before {
   content: " ";
   position: absolute;
   left: 0;
@@ -44,6 +38,42 @@ header {
   right: 0;
   background: #00315f;
   opacity: 0.25;
+} */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  background: rgba(255, 255, 255, 0.2);
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  opacity: 0.7;
+  text-align: center;
+  transition: all 0.3s;
+}
+.btn::after {
+  color: #fff;
 }
 /*! Carsousel section end */
 
@@ -77,6 +107,11 @@ header {
       padding-top: 15px;
       color: #5880a2;
     }
+    text-align: center;
+  }
+
+  span {
+    color: #365872;
   }
 }
 /*! Date section end */

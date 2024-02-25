@@ -10,7 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
@@ -39,7 +42,32 @@
     <!--! Header end -->
 
     <!--! Carousel section start -->
-    <section id="carousel"></section>
+    <section id="carousel">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="./assets/WhatsApp Image 2024-02-23 at 12.14.44 (1).jpeg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/WhatsApp Image 2024-02-23 at 12.12.45.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/WhatsApp Image 2024-02-23 at 12.12.45 (6).jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="swiper-button-next btn btn-1"></div>
+        <div class="swiper-button-prev btn btn-2"></div>
+      </div>
+    </section>
     <!--! Carousel section end -->
 
     <!--! Date section start -->
@@ -47,15 +75,24 @@
       <div class="container">
         <div class="date-wrapper">
           <div class="clock">
-            <h3>09</h3>
+            <div>
+              <h3>09</h3>
+              <span>Day</span>
+            </div>
           </div>
 
           <div class="clock">
-            <h3>09</h3>
+            <div>
+              <h3>09</h3>
+              <span>Month</span>
+            </div>
           </div>
 
           <div class="clock">
-            <h3>2023</h3>
+            <div>
+              <h3>2023</h3>
+              <span>Year</span>
+            </div>
           </div>
         </div>
       </div>
@@ -172,5 +209,27 @@
       </div>
     </section>
     <!--! Story section end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        centeredSlides: true,
+        loop: true,
+        speed: 3000,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
